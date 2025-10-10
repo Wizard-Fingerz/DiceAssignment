@@ -1,0 +1,9 @@
+distil_finetuned_freshers/
+*.log
+__pycache__/
+*.pyc
+.env
+data/
+models/
+output_results/
+sentiment_outputs/
