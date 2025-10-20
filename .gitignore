@@ -5,5 +5,5 @@ __pycache__/
 .env
 data/
 models/
-output_results/
+# output_results/
 sentiment_outputs/

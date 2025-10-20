@@ -1,0 +1,14 @@
+{
+  "Player 1": {
+    "avg_goals": 1.7725,
+    "avg_shots": 3.82,
+    "avg_possession_pct": 51.775,
+    "conv_rate": 0.4640052356020942
+  },
+  "Player 2": {
+    "avg_goals": 1.65,
+    "avg_shots": 3.5675,
+    "avg_possession_pct": 48.225,
+    "conv_rate": 0.4625087596355992
+  }
+}
