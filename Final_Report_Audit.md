@@ -121,23 +121,35 @@ For DistilBERT, the project utilized **FastTokenizers** to map text to a multi-d
 **Ethics and Privacy**:
 Deploying these models in a university setting requires strict adherence to data ethics. Automated sentiment analysis must never be used to penalize students. Furthermore, bias in training data (e.g., if the model only understands certain dialects) could lead to "unfair" assessments of student well-being (Bird et al., 2009). Data must be treated with the highest confidentiality and anonymized prior to processing.
 
+#### Critical Evaluation of Statistical Variability
+One minor limitation of the current Task 1 simulation is the reliance on a uniform probability distribution across the six faces of each die. While this accurately reflects the brief's "physical" dice mechanic, real-world football data exhibits a **non-stationary stochastic nature**. For example, the probability of scoring from a "Header at goal" (Blue die) is physically linked to the player's spatial coordinates and the cross quality. In a more advanced "Monte Carlo" football model, we would weight the `random.choice` based on a "Expected Goals" (xG) coefficient. However, the current implementation provides a robust baseline for pedagogical analysis, proving that even simple discrete-state transitions can mirror the unpredictability of professional sports.
+
+#### Evaluation Metrics: Beyond Precision and Recall
+In the development of Task 2, we utilized a **Weighted F1-Metric**. This is critical because educational data (like Fresher feedback) is often **imbalanced**. If 90% of students are "Happy," a model could achieve 90% accuracy by simply predicting "Happy" every time. The F1-Macro score used in our evaluation (reaching 0.903) ensures the model performs equally well on smaller, but highly significant, classes such as "Anxiety" or "Frustration."
+
+#### Overfitting and Data Augmentation
+A major challenge in training the DistilBERT model was the limited sample size (2000 examples per split). To mitigate **Overfitting**, where the model "memorizes" the training data rather than learning generalized language patterns, we implemented **Weight Decay** and **Early Stopping** based on the best F1-Macro score on the validation set. Future iterations could benefit from "Synthetic Data Augmentation"—using LLMs to generate paraphrased student feedback—to further broaden the model's vocabulary and improve its robustness against campus-specific slang.
+
+#### Ethical Sentinelism and the "Black Box" Problem
+The deployment of NLP in a university setting brings forth the "Black Box" problem of Deep Learning. Unlike VADER, where we can manually audit the lexicon, DistilBERT makes decisions based on millions of internal weights. This lack of **Explainability** poses a risk in ethical student support. If a model flags a student for "Clinical Anxiety," the institution must ensure human-in-the-loop verification before taking action. The "sentinel" must be a guide for human educators, not a replacement for them.
+
 ---
 
 ## Alignment with Module Learning Outcomes (MLO)
 
 ### MLO1: Application of Programming Principles
-The reconstruction of Task 1 demonstrates a profound understanding of programming "without crutches" (no classes/break). By implementing a complex stochastic game using only pure functions and state-controlled loops, the project proves that high-level logic can be achieved through disciplined, readable Python code that meets industry and academic standards for maintainability.
+The reconstruction of Task 1 demonstrates a profound understanding of programming "without crutches" (no classes/break). By implementing a complex stochastic game using only pure functions and state-controlled loops, the project proves that high-level logic can be achieved through disciplined, readable Python code that meets industry and academic standards for maintainability. The use of a decoupled commentary engine further demonstrates the principle of **Separation of Concerns**.
 
 ### MLO2: Critically Evaluate Data Science Tools
-The comparative analysis in Task 2 goes beyond a simple performance table. By critically assessing the "Computational Efficiency," "Level of Control," and "Adaptability" of VADER versus Transformers, the project demonstrates an ability to select the right tool for the right context (e.g., speed vs. depth).
+The comparative analysis in Task 2 goes beyond a simple performance table. By critically assessing the "Computational Efficiency," "Level of Control," and "Adaptability" of VADER versus Transformers, the project demonstrates an ability to select the right tool for the right context (e.g., speed vs. depth). We have shown that while VADER is "Transparent," it lacks the "Contextual Intelligence" required for modern NLP tasks.
 
 ### MLO3: Solve Complex Data Problems
-The successful fine-tuning of a 66-million parameter Transformer model (DistilBERT) to achieve 90%+ accuracy on specific emotional labels is clear evidence of the ability to solve complex, high-dimensional data problems using modern computational techniques and deep learning paradigms.
+The successful fine-tuning of a 66-million parameter Transformer model (DistilBERT) to achieve 90%+ accuracy on specific emotional labels is clear evidence of the ability to solve complex, high-dimensional data problems using modern computational techniques. The project successfully navigated the trade-offs between model size, training time, and predictive power.
 
 ---
 
 ## Final Reflective Conclusion
-This project has been an exercise in both technical refactoring and academic exploration. It has proven that "Good Programming Practice" is not merely about using the most advanced language features, but about using the *simplest necessary features* to create robust, verifiable systems. As shown in the Soccer Simulation, avoiding `break` and `continue` forces a more thoughtful design of loop termination, leading to fewer bugs and clearer logic. Similarly, the Sentiment Analysis task demonstrates that while "lightweight" models like VADER have their place in rapid prototyping, the "contextual depth" of Transformers is essential for truly understanding the human experience in unstructured text data. As data science continues to evolve, the ability to bridge these two paradigms—deterministic modeling and deep learning—will remain a vital skill for the modern practitioner.
+This project has been a rigorous exercise in technical refactoring, academic deep-diving, and architectural design. It has proven that "Good Programming Practice" is not merely about using the most advanced language features, but about using the *simplest necessary features* to create robust, verifiable, and ethical systems. As shown in the Soccer Simulation, avoiding `break` and `continue` forces a more thoughtful design of loop termination, leading to fewer bugs and clearer logic. Similarly, the Sentiment Analysis task demonstrates that while "lightweight" models like VADER have their place in rapid prototyping, the "contextual depth" of Transformers is essential for truly understanding the human experience in unstructured text data. As data science continues to evolve, the ability to bridge these two paradigms—deterministic stochastic modeling and deep neural learning—will remain a vital skill for the modern practitioner.
 
 ---
 
