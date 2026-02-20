@@ -1,0 +1,130 @@
+﻿SCENARIO 1: Standard Match (No Shot Clock)
+==================================================
+MATCH START: Player 1 wins the toss.
+==================================================
+
+[Minute 1] Player 1 in possession...
+    - Player 1 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 2] Player 2 in possession...
+    - Player 2 (RED): A piercing through ball into the final third!
+    - Player 2 (YELLOW): pass back/to black
+    - Player 2 (BLACK): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 5] Player 1 in possession...
+    - Player 1 (RED): He takes on the defender with direct dribbling!
+    - Player 1 (RED): A clever inside pass finds space in the midfield.
+    - Player 1 (BLUE): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 1 (GREEN): Heartbreak! It whistles just past the post.
+    - Player 1 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 10] Player 2 in possession...
+    - Player 2 (RED): A piercing through ball into the final third!
+    - Player 2 (YELLOW): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 2 (GREEN): Deflected out. It's a corner for the attacking side.
+    - Player 2 (YELLOW): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 2 (GREEN): GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 0 - P2: 1
+
+[Minute 15] Player 1 in possession...
+    - Player 1 (RED): A desperate lob over the defense towards the goal!
+    - Player 1 (GREEN): Too much power, and it flies over the crossbar.
+    - Player 1 (RED): A piercing through ball into the final third!
+    - Player 1 (YELLOW): pass back/to black
+    - Player 1 (BLACK): They recycle possession back to the defense.
+    - Player 1 (RED): A clever inside pass finds space in the midfield.
+    - Player 1 (BLUE): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 1 (GREEN): WHAT A SAVE! The keeper keeps them in it.
+    - Player 1 (RED): A desperate lob over the defense towards the goal!
+    - Player 1 (GREEN): GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 1 - P2: 1
+
+==================================================
+FINAL WHISTLE!
+Final Score: Player 1 [1] - Player 2 [1]
+Total Hail Mary attempts: 0
+==================================================
+
+
+==================================================
+SCENARIO 2: Modification (Shot Clock = 5 Rolls)
+==================================================
+==================================================
+MATCH START: Player 1 wins the toss.
+==================================================
+
+[Minute 1] Player 1 in possession...
+    - Player 1 (RED): A desperate lob over the defense towards the goal!
+    - Player 1 (GREEN): Heartbreak! It whistles just past the post.
+    - Player 1 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 4] Player 2 in possession...
+    - Player 2 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 5] Player 1 in possession...
+    - Player 1 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 6] Player 2 in possession...
+    - Player 2 (RED): A desperate lob over the defense towards the goal!
+    - Player 2 (GREEN): Too much power, and it flies over the crossbar.
+    - Player 2 (RED): A clever inside pass finds space in the midfield.
+    - Player 2 (BLUE): They recycle possession back to the defense.
+    - Player 2 (RED): A desperate lob over the defense towards the goal!
+      [WATCH] Shot clock at 5! Forcing a Hail Mary shot!
+      [HAIL MARY] Result: GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 0 - P2: 1
+
+[Minute 11] Player 1 in possession...
+    - Player 1 (RED): A piercing through ball into the final third!
+    - Player 1 (YELLOW): Flags up! The attack is halted by the linesman.
+  --- Attack broke down. ---
+
+[Minute 13] Player 2 in possession...
+    - Player 2 (RED): The defender steps in and cleanly wins the ball!
+  --- Attack broke down. ---
+
+[Minute 14] Player 1 in possession...
+    - Player 1 (RED): A quick exchange of passes near the penalty box.
+    - Player 1 (BLACK): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 1 (GREEN): GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 1 - P2: 1
+
+[Minute 17] Player 2 in possession...
+    - Player 2 (RED): A clever inside pass finds space in the midfield.
+    - Player 2 (BLUE): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+    - Player 2 (GREEN): GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 1 - P2: 2
+
+[Minute 20] Player 1 in possession...
+    - Player 1 (RED): A piercing through ball into the final third!
+    - Player 1 (YELLOW): pass back/to black
+    - Player 1 (BLACK): A dangerous free-kick delivery into the area.
+    - Player 1 (YELLOW): pass back/to black
+    - Player 1 (BLACK): HE'S GOING FOR IT! A strike from close range!
+      [ATTACK] Moving to final goal attempt...
+      [WATCH] Shot clock at 5! Forcing a Hail Mary shot!
+      [HAIL MARY] Result: GOOOAAAAALLLL!!! An absolute worldie!
+  *** GOAL! *** Current Score: P1: 2 - P2: 2
+
+==================================================
+FINAL WHISTLE!
+Final Score: Player 1 [2] - Player 2 [2]
+Total Hail Mary attempts: 2
+==================================================
+
+[CONCLUSION]
+Standard Match Goals: 2
+Shot Clock Match Goals: 4 (with 2 Hail Mary attempts)
+A restrictive shot clock increases turnover rates but can force more direct shooting opportunities.
